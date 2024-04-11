@@ -31,4 +31,10 @@ func main() {
 	business.PrintSlice(ss)
 	// Print a slice without a variable
 	business.PrintSlice([]business.Wind{windWest, windWest})
+
+	fmt.Println(costCalculation(windWest))
+}
+
+func costCalculation(p business.Coster) float64 {
+	return p.Cost()
 }

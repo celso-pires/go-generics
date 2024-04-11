@@ -16,6 +16,10 @@ type Wind struct {
 
 type Energy interface {
 	Solar | Wind
+	// Cost() float64
+}
+
+type Coster interface {
 	Cost() float64
 }
 
